@@ -1,38 +1,26 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav w-auto mx-auto list-unstyled">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold  text-full mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-full mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Online Courses
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Blockchain</a>
-                <a href="" class="dropdown-item">Bitcoin</a>
-                <a href="" class="dropdown-item">Ethererum</a>
-                <a href="" class="dropdown-item">All Courses</a>
-            </div>
+        <li class="nav-item ">
+            <a href="{% url 'products' %}?category=courses" class="logo-font font-weight-bold nav-link text-full mr-5">Online Courses</a>
         </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Books
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Blockchain</a>
-                <a href="" class="dropdown-item">Bitcoin</a>
-                <a href="" class="dropdown-item">All Books</a>
-            </div>
+        <li class="nav-item ">
+            <a href="{% url 'products' %}?category=books" class="logo-font font-weight-bold nav-link text-full mr-5">Books</a>
         </li>
     </ul>
 </div>
