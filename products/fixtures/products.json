@@ -1,0 +1,79 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "0001",
+        "name": "Build a Blockchain and a Cryptocurrency from Scratch",
+        "description": "Build a blockchain and cryptocurrency. Discover the engineering ideas behind technologies like Bitcoin and Ethereum!",
+        "price": 50.00,
+        "category": 1,
+        "rating": 4.5,
+        "image": "buildfromscatch.jpg"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "0002",
+        "name": "Blockchain and Bitcoin Fundamentals",
+        "description": "Learn the key elements of blockchain and Bitcoin in this bestselling video course and accompanying physical books and glossary sent to your doorsteps to aid learning.",
+        "price": 50,
+        "category": 1,
+        "rating": 5,
+        "image": "bthfundamentals.jpg"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "0003",
+        "name": "Blockchain and Ethereum Fundamentals",
+        "description": "Learn the key elements of blockchain and Ethereum in this bestselling video course and accompanying physical books and glossary sent to your doorsteps to aid learning.",
+        "price": 50,
+        "category": 1,
+        "rating": 5,
+        "image": "ethfundamentals.jpg"
+    }
+},
+{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "0004",
+        "name": "Cryptocurrency Investing For Dummies",
+        "description": "While the cryptocurrency market is known for its volatility—and this volatility is often linked to the ever-changing regulatory environment of the industry—the entire cryptocurrency market is expected to reach a total value of $1 trillion this year. If you want to get in on the action, this book shows you how.",
+        "price": 18.99,
+        "category": 2,
+        "rating": 4.3,
+        "image": "cryptofordummies.jpg"
+    }
+},
+{
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "0005",
+        "name": "The Crypto Book: How to Invest Safely in Bitcoin and Other Cryptocurrencies",
+        "description": "Blockchain technology and the cryptocurrencies it enables are being described by some people as the biggest thing since the internet, but very few people understand it, or the opportunities it brings. Enter this down-to-earth guide to understanding what cryptocurrencies are, why it matters, and how to make money from them.",
+        "price": 18.99,
+        "category": 2,
+        "rating": 4.5,
+        "image": "cryptobook.jpeg"
+    }
+},
+{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "0006",
+        "name": "Cryptoassets: The Innovative Investor's Guide to Bitcoin and Beyond (BUSINESS BOOKS)",
+        "description": "With the rise of bitcoin and blockchain technology, investors can capitalize on the greatest investment opportunity since the Internet. Bitcoin was the first cryptoasset, but today there are over 800 and counting, including ether, ripple, litecoin, monero, and more. This clear, concise, and accessible guide from two industry insiders shows you how to navigate this brave new blockchain world―and how to invest in these emerging assets to secure your financial future.",
+        "price": 18.99,
+        "category": 2,
+        "rating": 4.2,
+        "image": "cryptoassets.jpeg"
+    }
+}
+]

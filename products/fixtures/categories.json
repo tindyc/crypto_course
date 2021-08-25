@@ -1,0 +1,18 @@
+[
+    {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+    "name": "courses",
+    "friendly_name": "Online Courses"
+    }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+        "name": "books",
+        "friendly_name": "Books"
+        }
+    }
+]
