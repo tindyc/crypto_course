@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="overlay"></div>
+    <!-- Header -->
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <hr>
+            <h2 class="logo-font mb-4 text-full text-center">Contact Us!</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <!-- Form -->
+            <div class="jumbotron bg-clear mt-4 wrap-contact">
+                <!-- Form -->
+                <form action="{% url 'contact' %}" method="POST" id="contact-form">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col">
+                            {{ contact_form.first_name | as_crispy_field }}
+                        </div>
+                        <div class="col">
+                            {{ contact_form.last_name | as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{ contact_form.email | as_crispy_field }}
+                        </div>
+                        <div class="col">
+                            {{ contact_form.phone_number | as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ contact_form.subject | as_crispy_field }}
+                    {{ contact_form.your_message | as_crispy_field }}
+
+                    <!-- Buttons -->
+                    <div class="row mt-3 mb-5 mb-2">
+                        <div class="col-12 col-xl-6 text-right">
+                            <button id="submit-button" class="btn btn-lg btn-clear mt-3 w-100    w-sm-auto">
+                                <span class="font-weight-bold">Submit Message</span>
+                                <i class="fas fa-paper-plane submit-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

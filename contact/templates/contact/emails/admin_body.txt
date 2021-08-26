@@ -1,0 +1,10 @@
+Hi,
+
+{{ first_name }} {{last_name}} sent you a message on Crypto Course. Please answer at this email:{{ sender_email }} or contact them by phone at:{{ phone_number }}.
+
+Their message: 
+{{ your_message }}
+
+Best,
+
+Crypto Course
