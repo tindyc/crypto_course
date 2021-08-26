@@ -37,8 +37,8 @@
 
                     <!-- Buttons -->
                     <div class="text-right">
-                        <a class="btn btn-clear rounded-0" href="{% url 'blog' %}">Cancel</a>
-                        <button class="btn btn-full text-full rounded-0" type="submit">Add Post</button>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Add Post</button>
                     </div>
                 </form>
             </div>            
@@ -48,5 +48,10 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script src="{% static 'blog/js/elements_blogposts.js' %}"></script>
-{% endblock %} 
+    <script type="text/javascript">
+        $('#new-image').change(function() {
+            var file = $('#new-image')[0].files[0];
+            $('#filename').text(`Image will be set to: ${file.name}`);
+        });
+    </script>
+{% endblock %}
