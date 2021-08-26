@@ -1,0 +1,1 @@
+web: gunicorn crypto_course.wsgi:application

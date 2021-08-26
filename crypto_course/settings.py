@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 if os.path.exists("env.py"):
-  import env 
+  import env
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -124,13 +125,16 @@ WSGI_APPLICATION = 'crypto_course.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+DATABSES = {
+    'default': dj_database_url.parse('postgres://llsezpmbvkfxpc:45bb369e963c8abb5668af270dfd8db434d4e0e78eafd63fb60b76027661286f@ec2-176-34-222-188.eu-west-1.compute.amazonaws.com:5432/d9elv9mphifktd')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
