@@ -79,7 +79,7 @@
                         <h6>total comments</h6>
                     </div>
                     <div class="col-lg-6 col-sm-12 comment-btn-up">
-                        <a href="{% url 'blog_comment' blogpost.id %}" type="button" class="btn btn-lg btn-clear">Write a comment</a>
+                        <a href="{% url 'blog_comment' blogpost.id %}" type="button" class="btn btn-outline-black rounded-0">Write a comment</a>
                     </div>
                 </div>
             </div>
@@ -136,9 +136,5 @@
         </div>
     </div>
 </main>
-{% endblock %}
-{% block postloadjs %}
-{{ block.super }}
-    <script src="{% static 'blog/js/animation_details.js' %}"></script>
 {% endblock %}
 
