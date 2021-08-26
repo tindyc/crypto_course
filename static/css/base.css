@@ -175,6 +175,29 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* ----- Blog page ------- */
+
+.wrap_img {
+	height:50vh;
+	min-height: 30vh;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* ----- Blog detail page ------- */
+
+figure .wrap_img {
+	display: block;
+	max-height: 100vh;
+	max-width: 80vh;
+}
+
+.blog_img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

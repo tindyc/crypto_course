@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <!-- Header -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 post-header mx-auto">
+                <hr>
+                <h2 class="logo-font mb-4 text-full text-center">Blog Management</h2>
+                <h5 class="text-muted text-center">Create a Blog Post</h5>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 post-form mx-auto">
+                <form method="POST" action="{% url 'add_blogpost' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                     {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
+
+                    <!-- Buttons -->
+                    <div class="text-right">
+                        <a class="btn btn-clear rounded-0" href="{% url 'blog' %}">Cancel</a>
+                        <button class="btn btn-full text-full rounded-0" type="submit">Add Post</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'blog/js/elements_blogposts.js' %}"></script>
+{% endblock %} 
