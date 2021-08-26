@@ -132,7 +132,7 @@ WSGI_APPLICATION = 'crypto_course.wsgi.application'
 #     }
 # }
 
-DATABSES = {
+DATABASES = {
     'default': dj_database_url.parse('postgres://llsezpmbvkfxpc:45bb369e963c8abb5668af270dfd8db434d4e0e78eafd63fb60b76027661286f@ec2-176-34-222-188.eu-west-1.compute.amazonaws.com:5432/d9elv9mphifktd')
 }
 
