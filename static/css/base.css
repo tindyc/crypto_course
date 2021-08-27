@@ -175,29 +175,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* ----- Blog page ------- */
-
-.wrap_img {
-	height:50vh;
-	min-height: 30vh;
-	object-fit: cover;
-	width: 100%;
-}
-
-/* ----- Blog detail page ------- */
-
-figure .wrap_img {
-	display: block;
-	max-height: 100vh;
-	max-width: 80vh;
-}
-
-.blog_img {
-	height: 100%;
-	object-fit: cover;
-	width: 100%;
-}
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -316,5 +293,42 @@ figure .wrap_img {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
