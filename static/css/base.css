@@ -247,6 +247,11 @@ input[name='q']::placeholder {
     width: 100%;
     height: 100%;
 }
+
+/* Shop info */
+#shopinfo {
+    padding: 20px;
+}
 /* Product Form */
 
 .btn-file {
