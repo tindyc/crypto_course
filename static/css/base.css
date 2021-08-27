@@ -494,25 +494,3 @@ figure .wrap_img {
         font-size: 1em;
     }
 }
-/*--Footer--*/
-footer {
-    right: 0;
-    bottom: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
-}
-
-.footer-container p {
-    text-align: center;
-}
-
-.social-links li i {
-    justify-items: center;
-}
-
-#social-col {
-    align-content: center;
-    text-align: center;
-    -ms-flex-line-pack: center;
-}

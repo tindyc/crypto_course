@@ -81,7 +81,8 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            <a href="{% url 'add_blogpost' %}" class="dropdown-item" aria-label="blog management">Blog Management</a>
+                            <a href="{% url 'add_blogpost' %}" class="dropdown-item" aria-label="blog management">Blog
+                                Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -150,14 +151,20 @@
 
     {% block content %}
     {% endblock %}
+    <footer class="text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: black;">
+          © 2021 Copyright:
+          <a class="text-white" href="https://cryptocourse.herokuapp.com/">Crypto Course</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
-
 </body>
 
 </html>
