@@ -250,7 +250,7 @@ input[name='q']::placeholder {
 
 /* Shop info */
 #shopinfo {
-    padding: 20px;
+    padding-bottom: 20px;
 }
 /* Product Form */
 
@@ -355,10 +355,8 @@ input[name='q']::placeholder {
 
 /* ----- Blog detail page ------- */
 
-figure .wrap_img {
-    display: block;
-    max-height: 100vh;
-    max-width: 80vh;
+#blog {
+    padding: 20px;
 }
 
 .blog_img {

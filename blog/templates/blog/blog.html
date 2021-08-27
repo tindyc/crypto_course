@@ -1,66 +1,78 @@
 {% extends "base.html" %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container pt-5">
 
-        <!-- Header -->
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font text-full">All Blog Posts</h2>
-                <hr class="w-50 mb-3">
+<section id="blog" class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <img src="{{ MEDIA_URL }}blogimg.png" alt="" class="blog_img">
+        </div>
+
+        <div class="col-12 col-md-6 bg-clear">
+            <div class="text-center pb-5">
+                <h2 class="mt-5 mb-5 text-full">Crypto Blog</h2>
+                <p class="px-5 text-full text-justify">
+                    We offer original coverage of the global blockchain and cryptocurrency news,
+                    provide opinions, reviews, guides, introduce Crypto to people with an aim to help the general
+                    public understand and successfully use these technologies now and in the future. 
+                </p>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- Blog Post -->
-        <div class="row">
-            {% for blogpost in blogposts %}
-                <div class="col-12 col-md-6 mb-4">  
-                    <!-- Image -->         
-                    <div class="text-center ">
-                        <a href="{% url 'blog_detail' blogpost.id %}">
-                            {% if blogpost.image %} 
-                                    <img src="{{ blogpost.image.url }}" alt="{{ blogpost.blog_title }}" class="wrap_img"/>       
-                            {% else %}
-                                    <img src="{{ blogpost.image_url }}" alt="{{ blogpost.blog_title }}" class="wrap_img" />
-                            {% endif %}
-                            <!-- Title -->
-                            <h4 class="mx-2 my-2 text-black">{{ blogpost.blog_title }}</h4>
-                            <!-- Preview -->
-                            <p class="text-full pt-2 text-muted">{{ blogpost.blog_preview }}</p>
-                            <!-- Author -->
-                            <small class="px-2 text-muted">Posted by: {{ blogpost.author }} <span class="date"> on: {{ blogpost.date }}</span></small>
-                        </a>
-                    </div>
-                    <!-- Button -->
-                    <div class="text-center mt-4 mb-3">
-                        <a href="{% url 'blog_detail' blogpost.id %}" class="btn btn-outline-black rounded-0">READ MORE</a>
-                    </div>
-                </div>       
-            {%  endfor %}
+<div class="overlay"></div>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font text-full">All Blog Posts</h2>
+            <hr class="w-50 mb-3">
         </div>
     </div>
-    <!-- Scroll up button -->
-    <div class="btt-button shadow-sm ">
-        <a href="#" class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
-        </a>
+
+    <div class="row">
+        {% for blogpost in blogposts %}
+        <div class="col-12 col-md-6 mb-4 blog">
+            <div class="text-center ">
+                <a href="{% url 'blog_detail' blogpost.id %}">
+                    {% if blogpost.image %}
+                    <img src="{{ blogpost.image.url }}" alt="{{ blogpost.blog_title }}" class="wrap_img" />
+                    {% else %}
+                    <img src="{{ blogpost.image_url }}" alt="{{ blogpost.blog_title }}" class="wrap_img" />
+                    {% endif %}
+                    <h4 class="mx-2 my-2 text-black">{{ blogpost.blog_title }}</h4>
+                    <p class="text-full pt-2 text-muted">{{ blogpost.blog_preview }}</p>
+                    <small class="px-2 text-muted">Posted by: {{ blogpost.author }} <span class="date"> on:
+                            {{ blogpost.date }}</span></small>
+                </a>
+            </div>
+            <div class="text-center mt-4 mb-3">
+                <a href="{% url 'blog_detail' blogpost.id %}" class="btn btn-outline-black rounded-0">READ MORE</a>
+            </div>
+        </div>
+        {%  endfor %}
     </div>
+</div>
+<div class="btt-button shadow-sm ">
+    <a href="#" class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 {% endblock %}
