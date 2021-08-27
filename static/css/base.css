@@ -503,10 +503,6 @@ input[name='q']::placeholder {
 }
 
 /* ----- Logout page ------- */
-.signout {
-    padding-bottom: 20px;
-}
-
-.signup {
+.account {
     padding-bottom: 20px;
 }
