@@ -29,12 +29,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
 .btn-black {
     background: black;
     color: white;
@@ -54,9 +48,6 @@ body {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -107,6 +98,10 @@ a.category-badge>span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.shopinfo-icons:hover{
+    color: #A9A9A9;
 }
 
 /* ------------------------------- bootstrap toasts */
