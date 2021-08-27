@@ -99,7 +99,7 @@
                                     <div class="text-full">
                                         <p>{{ comment.comment }}</p>
                                     </div>
-                                    {% if request.user.is_authenticated or request.user.is_superuser %}
+                                    {% if request.user.is_superuser %}
                                         <div>
                                             <button type="button" class="btn btn-full text-full" data-toggle="modal" data-target="#deleteComment-{{ comment.id }}"><i class="fas fa-trash-alt"></i></button>
                                             <a href="{% url 'edit_comment' comment.id %}" class="btn btn-clear"><i class="fas fa-edit"></i></a>
