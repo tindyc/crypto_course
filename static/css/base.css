@@ -238,6 +238,15 @@ input[name='q']::placeholder {
     /* text-info */
 }
 
+/* Sales image */
+#sale {
+    padding: 20px;
+}
+.sale_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 /* Product Form */
 
 .btn-file {
