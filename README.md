@@ -2,7 +2,7 @@
 ---
 [**View the full project here**](https://cryptocourse.herokuapp.com/)
  
-![Crypto Course Screenshot](README_IMG/hero_readme.png)
+![Crypto Course Screenshot](README/images/sitescreenshot.png)
  
 ## Contents ##
 ---
@@ -39,9 +39,6 @@
  * [Local Deployment](#local-deployment)
  * [Heroku Deployment](#heroku-deployment)
 - [Credits and References](#credits-and-references)
- 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
- 
  
 ## Crypto Course ##
 ---
