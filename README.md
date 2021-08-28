@@ -258,7 +258,7 @@ The site allows users to register for an account, view and purchase products. Re
  
 * This website was built with the use of Bootstrap, CSS and Media Queries to ensure responsiveness across all devices so users are able to consult the website from any of their devices.
  
-* Responsiveness across different devices have been tested. Please read more in [TESTING.md](testing.md).
+* Responsiveness across different devices have been tested. Please read more in [TESTING.md](TESTING.md).
  
 **Navigation bars**
  
