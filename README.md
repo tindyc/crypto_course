@@ -113,18 +113,7 @@ As an Admin:
  
 At this point I began creating wireframes, using the above structure considerations. I used [Balsamiq](https://balsamiq.com/) these below;
  
-* [Home Page](README/wireframes/wireframe-index.png)
-* [Product Page](README/wireframes/wireframe-product.png)
-* [Product Details Page](README/wireframes/wireframe-product-details.png)
-* [Shopping Bag Page](README/wireframes/wireframe-shoppingbag.png)
-* [Profile Page](README/wireframes/wireframe-profile.png)
-* [Checkout Page](README/wireframes/wireframe-profile.png)
-* [Checkout Success Page](README/wireframes/wireframe-profile.png)
-* [Blog Page](README/wireframes/wireframe-blog.png)
-* [Contact Page](README/wireframes/wireframe-contact.png)
-* [Login / Logout / Registration Page](README/wireframes/wireframe-accounts.png)
-* [Product / Blog Management Page](README/wireframes/wireframe-accounts.png)
-* [Email Confirmation Page](README/wireframes/wireframe-profile.png)
+Please click [here](README/cryptocourse-wireframe.pdf) to see wireframes for this project.
  
 <a name="design"></a>
  
