@@ -293,7 +293,7 @@ The site allows users to register for an account, view and purchase products. Re
 * The products displayed can be sorted out by name, price, rating and category.
  
 2. Product detail page:
-* This page displays individual product details including name, category, image, rating, description, price and sizes (if any)).
+* This page displays individual product details including name, category, image, rating, description, price and sizes (if any).
  
 3. Product management:
 * Only Admin is allowed access to the Product management page through the dropdown menu on the navigation bar to add a new product to the database by filling the add product form. Images can be uploaded directly or users can provide image url.
@@ -599,7 +599,7 @@ Some products images were taken from:
 - [Amazon](https://amazon.co.uk/) for the books
 - [Ledger](https://www.ledger.com/) for the merchandise
  
--Product images for the online courses, blog post banner and sales banner were using [Canva](https://www.canva.com/).
+- Product images for the online courses, blog post banner and sales banner were using [Canva](https://www.canva.com/).
  
 **Video Credits:**
  
