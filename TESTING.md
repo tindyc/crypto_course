@@ -104,8 +104,9 @@ a. As a shopper I want to be able understand the purpose of the website and have
 ![Navbar / Landing Video](README/images/navbarlanding-test.png)
 
 b. As a shopper I want to be able to browse and view the product list.
-* The site acted as expected, displayed all the product cards accordingly as well as the button.
+* The site acted as expected, displayed all the product cards accordingly.
 ![Products List](README/images/productlist-test.png)
+
 c. As a shopper I want to be able to check individual product details such as price, size, category and description and rating.
 * The site acted as expected, displayed all product data correctly.
 ![Product Details](README/images/productdetails-test.png)
@@ -114,6 +115,7 @@ d. As a shopper I want to be able to easily go through my bag content and total 
 * The site acted as expected and displayed correct informations in the bag toast as well as the bag template. 
 ![Bag Success Toast](README/images/bag-success-toast-test.png)
 ![Shopping bag](README/images/shopping-bag-test.png)
+
 e. As a shopper I want to be able to read blog posts and comments.
 * Site acted as expected and displayed blog posts correctly and its comments as well. 
 ![ Blog posts](README/images/blog-posts-test.png)
@@ -218,6 +220,8 @@ f. As an admin I want to be able to delete a blog post .
 g. As an admin I want to be able to be notified when a customer send a query through the contact form.
 
 * When testing locally: Navigated to the contact page, filled the contact form and clicked send then I looked into the Gitpod terminal to check if the contact form informations were sent to the admin email and correctly displayed. Site acted as expected and displayed the email with all the contact form information in the Gitpod terminal. When tested on heroku, emails were sent to the store gmail account containing the customer's messages and details.
+
+![Message Recieved Email ](README/images/contact-message-email-test.png)
 
 **6. Stripe**
 
