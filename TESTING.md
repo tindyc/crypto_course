@@ -133,6 +133,9 @@ a. As a site user I want to be able to register for an account.
 b. As a site user I want to be able to login or logout of my account.
 * Site acted as expected in both scenario and allowed the user to log in and log out without trouble.
 ![Sign In Toast](README/images/signin-success-toast.png)
+![Sign Out Page](README/images/sign-out-page-test.png)
+![Sign Out Toast](README/images/sign-out-success-toast.png)
+
 
 c. As a site user I want to be able to recover my password if necessary.
 * Site acted as expected and the user password was changed safely.
@@ -155,7 +158,7 @@ g. As a shopper I want to be able to contact customer's support.
 ![Message Recieved Email ](README/images/contact-message-email-test.png)
 
 h. As a site user I want to be able to check my order history.
-* Result: Site acted as expected and displayed all order history informations and functional links directing to the previous confirmation screens of each orders. 
+* Site acted as expected and displayed all order history informations and functional links directing to the previous confirmation screens of each orders. 
 ![Order History ](README/images/order-history-test.png)
 
 **3. Sorting and Searching**
@@ -174,7 +177,7 @@ a. As a shopper I want to be able to view items in my shopping bag. .
 ![Shopping bag](README/images/shopping-bag-test.png)
 
 b. As a shopper I want to be able to modify the quantity of items in the bag before checkout. 
-* Navigated to the bag template after adding a few items. Changed the amount of items for each by using the selector. Tested the remove option to ensure that the item was removed from the bag. Checked if the global cost and shipping was updated. The site acted as expected and updated the number of items as well as the global and shipping costs. Shows 200 code in the terminal.
+* Navigated to the bag template after adding a few items. Changed the amount of items for each by using the selector. Tested the remove option to ensure that the item was removed from the bag. Checked if the global cost and shipping was updated. The site acted as expected and updated the number of items as well as the global and shipping costs.
 ![Modify items quantity](README/images/update-item-quantity-test.png)
 
 c. As a shopper I want to be able to buy products by card safely.
@@ -197,25 +200,37 @@ a. As an admin I want to be able to add a product to the store.
 
 * Logged in as a superuser and navigated to the product management page. Filled all required fields for different products, checked if the size section was disabled if the product does not have sizes and checked if the image field allowed to select an image from my computer and clicked the submit button. Site acted as expected and added a new product to the database and the store with or without sizes and image.
 
+![Add product ](README/images/add-product-success-toast.png)
+
 b. As an admin I want to be able to edit a product from store .
 
 * Navigated as a superuser to the edit form by clicking on the Edit button. Checked if the form was filled with previous data, and tried to change a few fields including the image then clicked submit. Site acted as expected and saved all changed product informations to the database and the website.
 
+![Edit product ](README/images/edit-product-sucess-toast.png)
+
 c. As an admin I want to be able to to delete a product from store .
 * Navigated as a superuser to the delete modal by clicking on the delete button. Clicked on the confirm the delete modal. Site acted as expected and deleted the product from the database and the website.
 
+![Del product ](README/images/delete-product-success-toast.png)
 
 d. As an admin I want to be able to create a blog post for the blog .
 
 * Logged in as a superuser and navigated to the blog management page section. Filled all required fields and checked if the image field allowed to select an image from my computer by clicking and selecting an image and clicked the submit button. Site acted as expected and added a new blog post to the database and the website.
 
+![Add blog ](README/images/add-blog-success-toast-test.png)
+
 e. As an admin I want to be able to edit a blog post.
 
 * Navigated as a superuser to the edit form by clicking on the Edit button. Checked if the form was filled with previous data, and tried to change a few fields including the image then clicked submit. Site acted as expected and saved all changed blog post informations to the database and the website.
 
+![Editing blog ](README/images/editing-blog-toast-test.png)
+![Edit blog success ](README/images/edit-blog-success-toast.png)
+
 f. As an admin I want to be able to delete a blog post .
 
 * Navigated as a superuser to a blog post page and clicked on the delete button. Confirmed that I want to delete the post by clicking delete again in the modal.Site acted as expected and deleted the blog post froö the database and the website.
+
+![Del blog](README/images/delete-blog-modal-test.png)
 
 g. As an admin I want to be able to be notified when a customer send a query through the contact form.
 
