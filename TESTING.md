@@ -18,15 +18,16 @@
 ### W3 HTML
 
 I validated the HTML with [W3C Validation Service](https://validator.w3.org/). All the errors shown were related Django Templating not being recognized by W3C:
-Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.
-Error: Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>.
-Warning: This document appears to be written in English. Consider adding lang="en" (or variant) to the html start tag.
-Error: Element head is missing a required instance of child element title.
-Error: Bad value {% foo %}.
-Error: The aria-labelledby attribute must point to an element in the same document.
+- Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.
+- Error: Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>.
+- Warning: This document appears to be written in English. Consider adding lang="en" (or variant) to the html start tag.
+- Error: Element head is missing a required instance of child element title.
+- Error: Bad value {% foo %}.
+- Error: The aria-labelledby attribute must point to an element in the same document.
 
 ![HTML](README/images/htmlvalidator.png)
 
+All the htmls document were checked :
 - [x] base.html
 - [x] home.html
 - [x] products.html
@@ -206,10 +207,15 @@ The payment method and webhook behaved as expected and were both successful.
 ## Issues I had to overcome
 * Database - After deployment to Heroku and connecting to Posrgres and AWS to store my static and media files. I had trouble editing and updating the site as no static files or media were showing locally during code refactoring on Gitpod. To fix this issue, a fellow memeber on Slack has suggested that I commented out the ``DEBUG = 'DEVELOPMENT' in os.environ`` in settings.py and set ``DEBUG = True``. This fixed the issue, and I was able to view all the product images and load any static files properly locally.
 
-* Blog App - When creating the blog app, the migration did not work properly. 
+* Blog App - When creating the blog app, the migration did not work properly. I think this was because I had previously created a blog app and deleted the entire app because I was worried I might not have enough time to build another app to complete this project. After I finished setting up most of the functionality on the site, I decided to give this a go again and created a new blog app. As I was creating the blog app, I struggled to make any migrations. Everytime I tried to do it, there would be no chnage detected. This was because when I deleted the old blog app, some of the fiels were not deleted properly. Mentor Precious kindly offered me  help and fixed this issue for me.
 
 ## Issues still to overcome
 * Quantity button - The minus quantity button in the bag is meant to be disabled when the quantity hits 1. Which works on small screens but does not work on larger screens. To fix this issue I would need to change the ID on the quantity-form to a class, and refactor the JavaScript to look for elements with the same class name and perform the appropriate actions. 
 
-* Landing page video - The landing page video does not work on iphones. It would disaply a static image as a background of the landing text instead of actually loading and playing the video at the back. This is because the brower on iphone does not support the large mp4 file. I have tried to add ``playsinline`` within the HTML for the video as suggested on slack, but did not fix the issue. I have yet to find a solution to this. 
+When the quantity of a product is updated to a decimal number during checkout, the app crashes. Due to time contrains, I will have to work on this at a later stage.
+
+When I try to update the quantity of a product during checkout to a decimal number, the app crashes.
+
+* Landing page video - The landing page video does not work on iphones. It would disaply a static image as a background of the landing text instead of actually loading and playing the video at the back. This is because the brower on iphone does not support the large mp4 file. I have tried to add ``playsinline`` within the HTML for the video as suggested on slack, but did not fix the issue. I have yet to find a solution to this. This is out of my current knowledge and skills and I would like to do some further research on my part later.
+
 
