@@ -211,10 +211,14 @@ The payment method and webhook behaved as expected and were both successful.
 * Blog App - When creating the blog app, the migration did not work properly. I think this was because I had previously created a blog app and deleted the entire app because I was worried I might not have enough time to build another app to complete this project. After I finished setting up most of the functionality on the site, I decided to give this a go again and created a new blog app. As I was creating the blog app, I struggled to make any migrations. Everytime I tried to do it, there would be no chnage detected. This was because when I deleted the old blog app, some of the fiels were not deleted properly. Mentor Precious kindly offered me  help and fixed this issue for me.
 
 ## Issues still to overcome
-* Quantity button - The minus quantity button in the bag is meant to be disabled when the quantity hits 1. Which works on small screens but does not work on larger screens. To fix this issue I would need to change the ID on the quantity-form to a class, and refactor the JavaScript to look for elements with the same class name and perform the appropriate actions. 
+* Quantity button - The minus quantity button in the bag is meant to be disabled when the quantity hits 1. Which works on small screens but does not work on larger screens. To fix this issue I would need to change the ID on the quantity-form to a class, and refactor the JavaScript to look for elements with the same class name and perform the appropriate actions. Due to time contrains, I will have to work on this at a later stage.
 
 * When the quantity of a product is updated to a decimal number during checkout, the app crashes. Due to time contrains, I will have to work on this at a later stage.
 
 * Landing page video - The landing page video does not work on iphones. It would disaply a static image as a background of the landing text instead of actually loading and playing the video at the back. This is because the brower on iphone does not support the large mp4 file. I have tried to add ``playsinline`` within the HTML for the video as suggested on slack, but did not fix the issue. I have yet to find a solution to this. This is out of my current knowledge and skills and I would like to do some further research on my part later.
+
+* Not secure warning or Unsecure connection - This site has a "not secure" warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing. I manually tested these on several mobile devices and Google ChromeDevTools allowed responsiveness testing also. I had a look into the [django documentaion](https://docs.djangoproject.com/en/2.2/topics/security/#ssl-https) on how to enforce https with Django. Due to time contrains, I will have to work on this at a later stage.
+
+
 
 
