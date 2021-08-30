@@ -589,7 +589,7 @@ All product details were taken from :
 - [Amazon](https://amazon.co.uk/) for the books
 - [Ledger](https://www.ledger.com/) for the merchandise
  
-All blog posts were taken on her official website:
+All blog posts were taken from :
 - [Cointelegraph](https://cointelegraph.com/)
  
  
