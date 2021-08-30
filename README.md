@@ -361,6 +361,99 @@ The testing process can be seen in the [TESTING.md](testing.md) document.
 * Advanced styling on the site to make it more attractive
 * Allow all registered users to add / edit blog posts
  
+ ## **DATABASE DESIGN**
+
+Throughout the development stage of the project, SQLite3 was used as this is the default database included with Django. On deployment, you are given the option to utilise PostgreSQL as this is included with Heroku.
+
+Django Allauth, specifically `django.contrib.auth.models` provided the **User** model that is used in the Profile App.
+
+### **Products** App
+
+### Category Model
+
+| Name          | Database Key  | Field Type | Type Validation |
+| ------------- | ------------- | ---------- | --------------- |
+| Name          | name          | CharField  | max_length=254  |
+| Friendly Name | friendly_name | CharField  | max_length=254  |
+
+### Product Model
+
+| Name        | Database Key | Field Type    | Type Validation                                              |
+| ----------- | ------------ | ------------- | ------------------------------------------------------------ |
+| Category    | category     | ForeignKey    | "Category", null=True, blank=True, on_delete=models.SET_NULL |
+| SKU         | sku          | CharField     | max_length=254, null=True, blank=True                        |
+| Name        | name         | CharField     | max_length=254                                               |
+| Description | description  | TextField     |                                                              |
+| Sizes       | has_sizes    | BooleanField  | default=False, null=True, blank=True                         |
+| Price       | price        | DecimalField  | max_digits=6, decimal_places=2                               |
+| Rating      | rating       | Decmial Field | max_digits=6, decimal_places=0, null=True, blank=True        |
+| Image_URL   | imge_url     | URLField      | max_length=1024, null=True, blank=True                       |
+| Image       | image        | ImageField    | null=True, blank=True                                        |
+
+### **Profiles** App
+
+### UserProfile Model
+
+| Name                    | Database Key            | Field Type    | Type Validation                              |
+| ----------------------- | ----------------------- | ------------- | -------------------------------------------- |
+| User                    | user                    | OneToOneField | User, on_delete=models.CASCADE               |
+| Default Phone Number    | default_phone_number    | CharField     | max_length=20, null=True, blank=True         |
+| Default Street Address1 | default_street_address1 | CharField     | max_length=80, null=True, blank=True         |
+| Default Street Address2 | default_street_address2 | CharField     | max_length=80, null=True, blank=True         |
+| Default Town or City    | default_town_or_city    | CharField     | max_length=40, null=True, blank=True         |
+| Default County          | default_county          | CharField     | max_length=80, null=True, blank=True         |
+| Default Postcode        | default_postcode        | CharField     | max_length=20, null=True, blank=True         |
+| Default Country         | default_country         | CountryField  | blank_label="Country", null=True, blank=True |
+
+### **Checkout** App
+
+### Order Model
+
+| Name                    | Database Key            | Field Type    | Type Validation                                                |
+| ----------------------- | ----------------------- | ------------- | -------------------------------------------------------------- |
+| Full Name               | full_name               | CharField     | max_length=50, null=False, blank=False                         |
+| Enail                   | email                   | CharField     | max_length=254, null=False, blank=False                        |
+| Country                 | country                 | CountryField  | blank_label='Country *', null=False, blank=False               |
+| Postcode                | postcode                | CharFiezd     | max_length=20, null=True, blank=True                           | 
+| Default Street Address2 | default_street_address2 | CharField     | max_length=80, null=True, blank=True                           |
+| Default Town or City    | default_town_or_city    | CharField     | max_length=40, null=True, blank=True                           |
+| Default County          | default_county          | CharField     | max_length=80, null=True, blank=True                           |
+| Town or City            | town_or_city            | CharField     | max_length=40, null=True, blank=True                           |
+| Delivery Cost           | delivery_cost           | DecimalFiel   | max_digits=6, decimal_places=2, null=False, default=0          |  
+| Order Total             | order_total             | DecimalFiel   | decimal_places=2, null=False, default=0                        |
+| Date                    | date                    | DateTimeField | auto_now_add=True                                              |
+| Grand Total             | grand_total             | DecimalFiel   | max_digits=10, decimal_places=2, null=False, default=0         | 
+| Original Bag            | original_bag            | TextField     | null=False, blank=False, default=''                            |
+| Stripe Pid              | stripe_pid              | CharField     | max_length=254, null=False, blank=False, default='             |  
+
+### **Blog** App
+
+### Blog Model
+| Name        | Database Key | Field Type    | Type Validation                                              |
+| ----------- | ------------ | ------------- | ------------------------------------------------------------ |
+| Author      | author       | ForeignKey    | User, on_delete=models.CASCADE                               |
+| Date        | date         | DateTimeField | auto_now_add=True                                            |
+| Blog Title  | blog_title   | CharField     | max_length=254, null=True, blank=True                        |
+| Blog Preview| blog_preview | CharField     | max_length=254, null=True, blank=True                        |
+| Blog Content| blog_content | TextField     | default=False, null=True, blank=True                         |
+| Image_URL   | imge_url     | URLField      | max_length=1024, null=True, blank=True                       |
+| Image       | image        | ImageField    | null=True, blank=True                                        |
+
+### **Contact** App
+
+### Contact Model
+
+| Name                    | Database Key            | Field Type    | Type Validation                              |
+| ----------------------- | ----------------------- | ------------- | -------------------------------------------- |
+| First Name              | first_name              | CharField     | max_length=50, null=False, blank=False       |
+| Last Name               | last_name               | CharField     | max_length=50, null=False, blank=False       |
+| Email                   | email                   | EmailField    | max_length=254, null=False, blank=False      |
+| Phone Number            | phone_number            | CharField     | max_length=20, null=True, blank=True         |
+| Subject                 | subject                 | CharField     | max_length=50, null=False,blank=False        |
+| Message                 | your_message            | TextField     | max_length=1000, null=False,blank=False      |
+| Date Sent               | date_sent               | DateTimeField | auto_now_add=True                            |
+
+
 ## Deployment ##
 ---
 <a name="requirements"></a>
