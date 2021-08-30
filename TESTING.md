@@ -58,6 +58,8 @@ I validated the CSS with the [W3 Validation Service](https://jigsaw.w3.org/css-v
 I validated the JavaScript with [JSHint](https://jshint.com/).
 
 ![Javascript](README/images/jshintvalidator.png)
+
+``/* jshint esversion: 8 */`` was added to the top of all the Js files to fix the above errors.
  
 
 ### Python
