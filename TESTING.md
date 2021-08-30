@@ -212,9 +212,7 @@ The payment method and webhook behaved as expected and were both successful.
 ## Issues still to overcome
 * Quantity button - The minus quantity button in the bag is meant to be disabled when the quantity hits 1. Which works on small screens but does not work on larger screens. To fix this issue I would need to change the ID on the quantity-form to a class, and refactor the JavaScript to look for elements with the same class name and perform the appropriate actions. 
 
-When the quantity of a product is updated to a decimal number during checkout, the app crashes. Due to time contrains, I will have to work on this at a later stage.
-
-When I try to update the quantity of a product during checkout to a decimal number, the app crashes.
+* When the quantity of a product is updated to a decimal number during checkout, the app crashes. Due to time contrains, I will have to work on this at a later stage.
 
 * Landing page video - The landing page video does not work on iphones. It would disaply a static image as a background of the landing text instead of actually loading and playing the video at the back. This is because the brower on iphone does not support the large mp4 file. I have tried to add ``playsinline`` within the HTML for the video as suggested on slack, but did not fix the issue. I have yet to find a solution to this. This is out of my current knowledge and skills and I would like to do some further research on my part later.
 
