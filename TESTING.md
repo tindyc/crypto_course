@@ -75,7 +75,11 @@ I used Google's lighthouse audit in the Chrome DevTools to test the website conf
 After running the audit, the site received the below scores;
 ![Google Lighthouse Audit](README/images/googlelighthouse.png)
 
+The score for Accessibility was lower than the rest of the scores due to the ARIA IDs being not unique. However, I think this issue comes from the bootstrap codes itself and therefore I will not be making any further changes.
+
 All the tests were passed on Google Lighthouse.
+
+
 
 ## Responsive Device & Browser Testing
 
