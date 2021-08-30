@@ -45,6 +45,7 @@ All the htmls document were checked :
 - [x] checkout-success.html
 - [x] contact.html
 - [x] profile.html
+- [x] 404.html
 
 ### W3 CSS
 
