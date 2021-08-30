@@ -308,7 +308,7 @@ The site allows users to register for an account, view and purchase products. Re
 * The email and password is required twice for confirmation and to avoid typos.
 * A verification email will be sent to the user's email when the form is successfully submitted. That email contains a security link which redirects to a "confirmed email" page to show successful registration. The user record is stored onto the database and will be filled in automatically for any future purchases.
  
-2. Signin in.
+2. Signing in.
 * Registered users can sign in through the sign in page through the link on the navigation bar. They will be required to fill in their email or username along with their password on the login form to be allowed access to registered user's privileges on the site.
 * Registered Users can also reset their password if forgotten and will be sent a link to do so via email.
 * Once the login form is submitted successfully, the user is redirected to their profile page containing their personal information.
