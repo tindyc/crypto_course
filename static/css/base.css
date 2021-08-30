@@ -12,6 +12,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*-- Navbar --*/
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.75);
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
