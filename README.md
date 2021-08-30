@@ -220,7 +220,7 @@ Bootstrap is a free and open-source tool collection for creating responsive webs
  
 ## Features ##
 ---
-The site allows users to register for an account, view and purchase products. Reigstered users are able to login/logout and to reate, upload and update their own profiles with saved records for future purchases or to view order history. Users are able to view blog posts and registered users are able to leave comments on blog posts. Admin is able to add, edit or delete products, blog posts and its comments. Admin is able to view any orders made and accounts registered.
+The site allows users to register for an account, view and purchase products. Reigstered users are able to login/logout and to create and update their own profiles with saved records for future purchases or to view order history. Users are able to view blog posts and registered users are able to leave comments on blog posts. Admin is able to add, edit or delete products, blog posts and its comments. Admin is able to view any orders made and accounts registered.
  
 ### CRUD Functionality
 - Add profile
