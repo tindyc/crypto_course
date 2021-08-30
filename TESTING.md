@@ -265,7 +265,7 @@ The payment method and webhook behaved as expected and were both successful.
 
 * Landing page video - The landing page video does not work on iphones. It would disaply a static image as a background of the landing text instead of actually loading and playing the video at the back. This is because the brower on iphone does not support the large mp4 file. I have tried to add ``playsinline`` within the HTML for the video as suggested on slack, but did not fix the issue. I have yet to find a solution to this. This is out of my current knowledge and skills and I would like to do some further research on my part later.
 
-* Not secure warning or Unsecure connection - This site has a "not secure" warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing. I manually tested these on several mobile devices and Google ChromeDevTools allowed responsiveness testing also. I had a look into the [django documentaion](https://docs.djangoproject.com/en/2.2/topics/security/#ssl-https) on how to enforce https with Django. Due to time contrains, I will have to work on this at a later stage.
+* Not secure warning or Unsecure connection - This site has a "not secure" warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing. I manually tested these on several mobile devices and Google ChromeDevTools allowed responsiveness testing also. I had a look into the [django documentaion](https://docs.djangoproject.com/en/2.2/topics/security/#ssl-https) on how to enforce https with Django. Due to time contrains, I will have to work on this at a later stage. The insecure error only showed up once and is no longer showing.
 
 
 

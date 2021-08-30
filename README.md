@@ -202,11 +202,7 @@ During the pre-development phase, I listed out some styling ideas that I thought
 <ul>
 <li><a href="https://getbootstrap.com/">Bootstrap</a> -
 Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. </li>
-<li><a href="https://jquery.com/">JQuery</a> -
-Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. </li>
 <li><a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a> - Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser.</li>
-<li><a href="http://ami.responsivedesign.is/">Am I Responsive?</a> - Responsive design demo in ReadMe summary.</li>
-<li><a href="https://www.responsivedesignchecker.com/">Responsive Design Checker</a> - Check website response across device types.</li>
 </ul>
  
 ### Deployment Platform
@@ -250,7 +246,7 @@ The site allows users to register for an account, view and purchase products. Re
  
 **Navigation bars**
  
-* This feature enables the user to navigate the site easily and intuitively, as well as login/register their account.
+* This feature enables the user to navigate the site easily and intuitively, as well as login/logout and register their account.
  
 * This project has two responsive navigation bars present on all pages:
 1. Main navigation bar:
