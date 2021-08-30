@@ -70,7 +70,6 @@ Please click [here](README/userstories.pdf) to view User Stories for this projec
 * To become a platform where developers and investors can learn about cryptocurrency.
 * To share blog posts that are SEO friendly which would lead to more organic traffic to the  site and increase revenue.
 * To allow users to leave comments on blog posts to share their opinions.
-* To create a stock of products to be sold online and keep track of the sales as an admin.
 * To be able to create/update/delete products and their details as an admin
 * To enable users to create an account for future purchases with saved records.
  
@@ -102,7 +101,7 @@ The users should be able to conduct the following actions on the website:
 As an Admin:
 * Add, edit, delete a product and its details.
 * Add, edit, delete a blog post and its details.
-* Delete comments that violate the site policy.
+* Edit or Delete comments that violate the site policy.
 * View order details
 * View messages from users
 * Manage user accounts
@@ -127,7 +126,7 @@ The site is created to allow users purchase cryptocurrency courses and related m
  
 The resulting palette is below;
  
-![Crypto Course Color Scheme](assets/README/images/color-palette.jpg)
+![Crypto Course Color Scheme](README/images/color-palette.jpg)
  
 ##### Colour Palette
  
