@@ -181,6 +181,7 @@ During the pre-development phase, I listed out some styling ideas that I thought
 <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> - Programming language used to drive core site functionality including user login and push/retrieving database information.</li>
 <li><a href="https://github.com/django/django">Django</a> - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</li>
 <li><a href="https://www.sqlite.org/index.html">SQLite</a> - SQLite is a C library that provides a lightweight disk-based database that doesn't require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language.</li>
+<li><a href="https://www.postgresql.org/">Postgres</a> - PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</li>
 </ul>
  
 ### Libraries
@@ -188,8 +189,6 @@ During the pre-development phase, I listed out some styling ideas that I thought
 <li><a href="https://fontawesome.com/">Font Awesome</a> - Library used for icons, such as social links and other images.</li>
 <li><a href="https://fonts.google.com/">Google Fonts</a> - Font style library.</li>
 <li><a href="https://jqueryui.com/">jQuery</a> - JavaScript library used for simplification of JS scripts and DOM manipulation.</li>
-<li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> - Micro-framework to simplify Python scripting and web server tasks.</li>
-<li><a href="https://werkzeug.palletsprojects.com/en/1.0.x/">Werkzeug</a> - Python library to manage user management integrity.</li>
 </ul>
  
 ### Editors
