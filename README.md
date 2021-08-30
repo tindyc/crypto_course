@@ -599,7 +599,7 @@ Some products images were taken from:
 - [Amazon](https://amazon.co.uk/) for the books
 - [Ledger](https://www.ledger.com/) for the merchandise
  
-- Product images for the online courses, blog post banner and sales banner were using [Canva](https://www.canva.com/).
+- Product images for the online courses, blog post banner and sales banner were created using [Canva](https://www.canva.com/).
  
 **Video Credits:**
  
