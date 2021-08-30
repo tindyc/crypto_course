@@ -514,12 +514,13 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 * Using IDE or Gitpod, create env.py file in the root directory of the project and include the following:
  
 ```
-import os
- 
-os.environ["STRIPE_PUBLIC_KEY"] = "YOUR_STRIPE_PUBLIC_KEY"
-os.environ["STRIPE_SECRET_KEY"] = "YOUR_STRIPE_SECRET_KEY"
-os.environ["STRIPE_WH_SECRET"] = "YOUR_STRIPE_WH_SECRET"
-os.environ["SECRET_KEY"] = "YOUR_SECRET_KEY_HERE"
+os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE PUBLIC KEY HERE" 
+os.environ["STRIPE_SECRET_KEY"] = "STRIPE SECRET KEY HERE" 
+os.environ["SECRET_KEY"] = "Django SECRET KEY HERE "
+os.environ["STRIPE_WH_SECRET"] = "STRIPE WH SECRET KEY HERE"
+os.environ["DEFAULT_FROM_EMAIL"] = "DEFAULT EMAIL HERE"
+os.environ["AWS_ACCESS_KEY_ID"] = "AWS ACCESS KEY ID HERE"
+os.environ["AWS_SECRET_ACCESS_KEY"] = "AWS SECRET ACCESS KEY HERE"
 os.environ["DEVELOPMENT"] = "True"
 ```
  
