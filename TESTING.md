@@ -101,41 +101,60 @@ The website has been manually tested using the following browers.
 
 a. As a shopper I want to be able understand the purpose of the website and have direct access to view available products.
 * The site acted as expected and displayed the landing video properly with link to products page working fine.
+![Navbar / Landing Video](README/images/navbarlanding-test.png)
 
 b. As a shopper I want to be able to browse and view the product list.
-* The site acted as expected, displayed all the product cards accordingly as well as the button and code 200 in the terminal.
-
+* The site acted as expected, displayed all the product cards accordingly as well as the button.
+![Products List](README/images/productlist-test.png)
 c. As a shopper I want to be able to check individual product details such as price, size, category and description and rating.
 * The site acted as expected, displayed all product data correctly.
+![Product Details](README/images/productdetails-test.png)
 
 d. As a shopper I want to be able to easily go through my bag content and total cost of my order.
 * The site acted as expected and displayed correct informations in the bag toast as well as the bag template. 
-
+![Bag Success Toast](README/images/bag-success-toast-test.png)
+![Shopping bag](README/images/shopping-bag-test.png)
 e. As a shopper I want to be able to read blog posts and comments.
 * Site acted as expected and displayed blog posts correctly and its comments as well. 
+![ Blog posts](README/images/blog-posts-test.png)
+![Blog comments](README/images/blog-comments-test.png)
 
 **2. Registration and Accounts**
 
 a. As a site user I want to be able to register for an account.
 * Site acted as expected, allowed all registration steps without trouble and creates a user profile both in the database and on the website. Newly registered users recieve confirmation email to confirm success of registraion.
 
+![Verify email](README/images/reg-verify-email-page-test.png)
+![Account Email Confiratmion](README/images/reg-email-confirmation-test.png)
+![Account Email Confiratmion](README/images/reg-email-confirm-page-test.png)
+
 b. As a site user I want to be able to login or logout of my account.
 * Site acted as expected in both scenario and allowed the user to log in and log out without trouble.
+![Sign In Toast](README/images/signin-success-toast.png)
 
 c. As a site user I want to be able to recover my password if necessary.
 * Site acted as expected and the user password was changed safely.
+![Password Reset](README/images/password-reset-test.png)
+![Password Reset](README/images/password-rest-email-test.png)
+![Password Reset](README/images/pw-change-success-toast-test.png)
 
 e. As a site user I want to be able to have a customizable profile.
-*Site acted as expected and displayed the custom profile template as well as a functional user details form.
+* Site acted as expected and displayed the custom profile template as well as a functional user details form.
+![Profile](README/images/profile-page-test.png)
 
 f. As a site user I want to be able to create a blog comment.
-* Result: Site acted as expected, after filling out add comment form, new comment display under blog post.
+* Site acted as expected, after filling out add comment form, new comment display under blog post.
+![Blog Comment Success Toast](README/images/blog-comment-success-toast-test.png)
+![Blog Comments](README/images/all-blog-comments-test.png)
 
 g. As a shopper I want to be able to contact customer's support.
 * Site acted as expected and sent a confirmation email to the user as well as the admin after contact form is filled out and sumbitted succesfully.
+![Contact Success Toast](README/images/contact-success-toast.png)
+![Message Recieved Email ](README/images/contact-message-email-test.png)
 
 h. As a site user I want to be able to check my order history.
 * Result: Site acted as expected and displayed all order history informations and functional links directing to the previous confirmation screens of each orders. 
+![Order History ](README/images/order-history-test.png)
 
 **3. Sorting and Searching**
 
@@ -144,15 +163,17 @@ a. As a shopper I want to be able to sort products by categories, alphabetical o
 
 b. As a shopper I want to be able to search for a product by name, category or description .
 * When the search bar is used to conduct various queries by name, words present in descriptions and category to ensure that according products were displayed. Site acted as expected and displayed the correct products according to the search effected.
+![Serach results ](README/images/serach-result-test.png)
 
 **4. Purchasing and Checkout**
 
 a. As a shopper I want to be able to view items in my shopping bag. .
 * Added a product to the bag and checked that it was correctly displayed in the bag toast with no bugs then clicked on the 'Secure Chekout' button to navigate to the bag page. Verified if all product data shows and that the shipping cost and product cost add up correctly. The site acted as expected and displayed correct informations in the bag toast as well as the bag template. Showed Code 200 in the terminal.
-:
+![Shopping bag](README/images/shopping-bag-test.png)
 
 b. As a shopper I want to be able to modify the quantity of items in the bag before checkout. 
 * Navigated to the bag template after adding a few items. Changed the amount of items for each by using the selector. Tested the remove option to ensure that the item was removed from the bag. Checked if the global cost and shipping was updated. The site acted as expected and updated the number of items as well as the global and shipping costs. Shows 200 code in the terminal.
+![Modify items quantity](README/images/update-item-quantity-test.png)
 
 c. As a shopper I want to be able to buy products by card safely.
 
@@ -161,10 +182,12 @@ c. As a shopper I want to be able to buy products by card safely.
 d. As a shopper I want to be able to view an order confirmation after the purchase.
 
 * Used the Stripe card details to test a successful payment and waited after the loading spinner to check if the order confirmation page was loading with all order and shipping details. Site acted as expected and displayed the order confirmation page right after the loading spinner with all correct order informations.
+![Order Confirmation Page ](README/images/order-confirmation-success-toast.png)
 
 e. As a shopper I want to be able to receive a confirmation email after checkout .
 
 * Site acted as expected in both scenarios and sent the confirmation email with all correct order informations.
+![Order Confirmation Email ](README/images/order-confirmation-email-test.png)
 
 **5. Admin and Store Management**
 

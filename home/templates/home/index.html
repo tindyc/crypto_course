@@ -11,14 +11,14 @@
 
 {% block content %}
 <section class="showcase">
-<video src="{{ MEDIA_URL }}video.mp4" muted loop autoplay></video>
-<div class="overlay"></div>
-<div class="landing-text">
-    <h2>Crypto Course </h2>
-    <h3>Invest in your future</h3>
-    <p>Enter the world of cryptocurrency and start learning with us!</p>
-    <a href="{% url 'products' %}">Shop Now</a>
-</div>
+    <video src="{{ MEDIA_URL }}video.mp4" loop autoplay muted></video>
+    <div class="overlay"></div>
+    <div class="landing-text">
+        <h2>Crypto Course </h2>
+        <h3>Invest in your future</h3>
+        <p>Enter the world of cryptocurrency and start learning with us!</p>
+        <a href="{% url 'products' %}">Shop Now</a>
+    </div>
 </section>
 
 {% endblock %}

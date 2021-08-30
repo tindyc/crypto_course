@@ -100,7 +100,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.shopinfo-icons:hover{
+.shopinfo-icons:hover {
     color: #A9A9A9;
 }
 
@@ -242,7 +242,8 @@ input[name='q']::placeholder {
 #sale {
     padding: 20px;
 }
-.sale_img{
+
+.sale_img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -252,6 +253,7 @@ input[name='q']::placeholder {
 #shopinfo {
     padding-bottom: 20px;
 }
+
 /* Product Form */
 
 .btn-file {
@@ -366,92 +368,89 @@ input[name='q']::placeholder {
 }
 
 /*--Home Page--*/
-.showcase
-{
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  transition: 0.5s;
-  z-index: 2;
-}
-.showcase.active
-{
-  right: 300px;
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
 }
 
-.showcase video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-}
-.overlay
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #03a9f4;
-  mix-blend-mode: overlay;
-}
-.landing-text
-{
-  position: relative;
-  z-index: 10;
+.showcase.active {
+    right: 300px;
 }
 
-.landing-text h2
-{
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
-.landing-text h3
-{
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
 }
-.landing-text p
-{
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
+
+.landing-text {
+    position: relative;
+    z-index: 10;
 }
-.landing-text a
-{
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  transition: 0.2s;
+
+.landing-text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
 }
-.landing-text a:hover
-{
-  letter-spacing: 6px;
+
+.landing-text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.landing-text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.landing-text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.landing-text a:hover {
+    letter-spacing: 6px;
 }
 
 
@@ -477,7 +476,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* ----- Logout page ------- */
+/* ----- Accounts page ------- */
 .account {
     padding-bottom: 20px;
 }
