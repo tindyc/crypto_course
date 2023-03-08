@@ -32,7 +32,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 
 
-ALLOWED_HOSTS = ['cryptocourse.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['cryptocourse.herokuapp.com', 'localhost', 'web-production-3a41.up.railway.app']
 
 
 # Application definition
