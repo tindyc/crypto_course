@@ -1,6 +1,6 @@
 # Crypto Course #
 ---
-[**View the full project here**](https://cryptocourse.herokuapp.com/)
+[**View the full project here**](https://crypto-course.onrender.com)
  
 ![Crypto Course Screenshot](README/images/sitescreenshot.png)
  
@@ -45,7 +45,7 @@
  
 This is my final Milestone Project for the Full Stack Web Development course provided by Code Institute. The objective for this assignment was to create a "full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or activities based on the dataset, such as the purchase of a product/service." This web application is developed by using HTML, CSS, JavaScript, Python+Django, Postgres, Stripe and AWS.
  
-A live version of the site can be found [here](https://cryptocourse.herokuapp.com/).
+A live version of the site can be found [here](https://crypto-course.onrender.com).
  
 Crypto Course is a Full Stack Ecommerce web application for a cryptocurrency company. This application uses E-commerce functionality in the following ways:
 - CRUD functionality for admin users to ADD, EDIT or DELETE products to sell products
